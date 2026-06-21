@@ -47,7 +47,7 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className={`w-full max-w-max rounded-[8px] font-inter flex items-center justify-center ${variants[variant]} ${className}`}
+      className={`w-full rounded-[8px] font-inter flex items-center justify-center ${variants[variant]} ${className}`}
     >
       {children}
     </button>
