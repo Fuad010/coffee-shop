@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import { useMobileMenuStore } from "@/store/mobileMenuStore"
 import { useLockBodyScroll } from "@/hooks/useLockBodyScroll"
 import BurgerButton from "./BurgerButton"
-import MobileNavbar from "../Navbar/MobileNavbar"
+import MobileNavbar from "./Navbar/MobileNavbar"
 
 export default function MobileMenu() {
   const isOpen = useMobileMenuStore((state) => state.isOpen)

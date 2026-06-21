@@ -13,7 +13,7 @@ export default function MobileNavbar() {
           key={item.href}
           to={item.href}
           onClick={close}
-          className={`w-full flex items-center justify-center transition-all duration-150 ease-in-out ${location.pathname === item.href ? "bg-text h-[42px] text-white" : "font-inter font-normal h-[30px]"}`}
+          className={`w-full flex items-center justify-center transition-all duration-150 ease-in-out ${location.pathname === item.href ? "bg-text h-[42px] text-white pointer-events-none" : "font-inter font-normal h-[30px]"}`}
         >
           {item.name}
         </Link>
