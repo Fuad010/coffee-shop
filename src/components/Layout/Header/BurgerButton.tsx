@@ -1,15 +1,16 @@
-import { useState } from "react"
+import { useMobileMenuStore } from "@/store/mobileMenuStore"
 
 type Props = {
   className?: string
 }
 
 export default function BurgerButton({ className = "" }: Props) {
-  const [isOpen, setIsOpen] = useState(false)
+  const isOpen = useMobileMenuStore((state) => state.isOpen)
+  const toggle = useMobileMenuStore((state) => state.toggle)
 
   return (
     <button
-      onClick={() => setIsOpen((prev) => !prev)}
+      onClick={toggle}
       className={`relative flex h-[22px] w-[22px] items-center justify-center ${className}`}
     >
       <span

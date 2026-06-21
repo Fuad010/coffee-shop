@@ -7,7 +7,6 @@ import { useHasScroll } from "@/hooks/useHasScroll"
 
 export default function Header() {
   const hasScroll = useHasScroll()
-
   return (
     <header>
       <div className="lg:h-[100px] sm:h-[80px] h-[70px] w-full">
