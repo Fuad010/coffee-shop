@@ -1,5 +1,5 @@
 import Logo from "@/components/ui/Logo"
-import Navbar from "../Navbar"
+import Navbar from "./Navbar"
 import BurgerButton from "./BurgerButton"
 import CartButton from "./CartButton"
 import SearchInput from "./SearchInput"

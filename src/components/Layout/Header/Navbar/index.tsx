@@ -10,7 +10,7 @@ export default function Navbar() {
         <Link
           key={item.href}
           to={item.href}
-          className={`relative after:transition-all after:duration-150 after:ease-in-out after:content-[''] hover:after:w-[calc(100%+2px)] after:absolute flex items-center flex-col after:bottom-0 after:h-[1.5px] after:bg-text ${location.pathname === item.href ? "after:w-[calc(100%+2px)]" : "after:w-[0px]"}`}
+          className={`relative after:transition-all after:duration-150 after:ease-in-out after:content-[''] hover:after:w-[calc(100%+2px)] after:absolute flex items-center flex-col after:bottom-0 after:h-[1.5px] after:bg-text ${location.pathname === item.href ? "after:w-[calc(100%+2px)] pointer-events-none" : "after:w-[0px]"}`}
         >
           {item.name}
         </Link>
