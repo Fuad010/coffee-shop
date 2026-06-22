@@ -13,7 +13,7 @@ export default function FavoriteCoffeeSection() {
   return (
     <section>
       <div
-        className="w-full bg-no-repeat sm:bg-center bg-cover relative flex items-center justify-center lg:py-[68px] sm:py-[34px] py-[41px] px-[24px] sm:px-[18px]"
+        className="w-full bg-no-repeat sm:bg-center bg-cover relative flex items-center justify-center lg:py-[68px] sm:py-[34px] py-[41px] px-[24px] sm:px-[18px] lg:mt-[110px] sm:mt-[60px] mt-[56px]"
         style={{
           backgroundImage,
         }}
