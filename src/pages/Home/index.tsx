@@ -1,3 +1,4 @@
+import ClientSliderSection from "@/components/ClientSliderSection"
 import CoffeeBeansSection from "@/components/CoffeeBeansSection"
 import FavoriteCoffeeSection from "@/components/FavoriteCoffeeSection"
 import FeatureSection from "@/components/FeatureSection"
@@ -12,6 +13,7 @@ export default function Home() {
       <CoffeeBeansSection />
       <FavoriteCoffeeSection />
       <ProductShopSection />
+      <ClientSliderSection />
     </>
   )
 }
