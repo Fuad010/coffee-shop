@@ -11,7 +11,7 @@ export default function Header() {
     <header>
       <div className="lg:h-[100px] sm:h-[80px] h-[70px] w-full">
         <div
-          className={`fixed transition-all duration-50 ${hasScroll ? "drop-shadow-[0_1px_1px_#0000000F]" : "drop-shadow-[0_0px_0px_#0000000F]"} border-[#0000000F] w-full lg:h-[100px] sm:h-[80px] flex items-center justify-center h-[70px] bg-bg`}
+          className={`fixed transition-all duration-50 z-40 ${hasScroll ? "drop-shadow-[0_1px_1px_#0000000F]" : "drop-shadow-[0_0px_0px_#0000000F]"} border-[#0000000F] w-full lg:h-[100px] sm:h-[80px] flex items-center justify-center h-[70px] bg-bg`}
         >
           <div className="lg:mx-[16px] lg:px-[0px] sm:px-[23px] px-[16px] max-w-[1140px] w-full mx-auto flex items-center justify-between">
             <Logo />
