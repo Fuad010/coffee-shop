@@ -16,7 +16,7 @@ export default function Header() {
           <div className="lg:mx-[16px] lg:px-[0px] sm:px-[23px] px-[16px] max-w-[1140px] w-full mx-auto flex items-center justify-between">
             <Logo />
             <Navbar />
-            <div className="flex gap-[13px] sm:gap-[8px] lg:gap-[18px]">
+            <div className="flex gap-[13px] sm:gap-[8px] lg:gap-[18px] items-center">
               <SearchInput />
               <CartButton />
               <BurgerButton className="sm:hidden flex" />
