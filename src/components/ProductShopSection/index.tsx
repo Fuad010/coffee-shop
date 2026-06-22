@@ -1,7 +1,6 @@
+import { products } from "@/data/mockProductData"
 import Button from "../ui/Button"
-import StarIcon from "@/assets/icons/Star.svg"
-import UnStarIcon from "@/assets/icons/UnStar.svg"
-import Product1 from "@/assets/images/products/product1.jpg"
+import ProductCard from "../ui/ProductCard"
 
 export default function ProductShopSection() {
   return (
@@ -19,33 +18,15 @@ export default function ProductShopSection() {
           </p>
         </div>
         <div className="lg:mt-[80px] sm:mt-[50px] mt-[50px] flex lg:gap-[24px] sm:gap-[32px] gap-[24px] flex-wrap justify-center">
-          <div className="rounded-[12px] border border-[#E0DFDE] max-w-[267px] overflow-hidden drop-shadow-[0px_0px_20px_#0000001F] bg-[#FAF5FF]">
-            <img
-              src={Product1}
-              alt="product img"
-              className="h-[240px] w-full object-cover"
+          {products.map((product) => (
+            <ProductCard
+              key={product.id}
+              title={product.title}
+              price={product.price}
+              image={product.image}
+              rating={product.rating}
             />
-            <div className="px-[16px] pt-[20px] pb-[26px]">
-              <div className="font-jakarta text-small-text font-bold flex justify-between items-center">
-                <span className="text-[18px]">Paper pouch</span>
-                <span className="text-[16px]">$450</span>
-              </div>
-              <div className="mt-[22px] flex justify-between items-center">
-                <Button
-                  variant="primarySmall"
-                  children="Add to cart"
-                  className="max-w-max"
-                />
-                <div className="flex gap-[4px]">
-                  <img src={StarIcon} />
-                  <img src={StarIcon} />
-                  <img src={StarIcon} />
-                  <img src={StarIcon} />
-                  <img src={UnStarIcon} />
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
         <Button
           children="View All Product"
