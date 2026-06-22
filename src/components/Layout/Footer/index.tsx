@@ -30,7 +30,7 @@ export default function Footer() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex gap-[12px] font-inter text-[16px] font-normal"
+                  className="flex gap-[12px] font-inter text-[16px] font-normal hover:underline"
                 >
                   <span>{item.name}</span>
                 </a>
@@ -47,7 +47,7 @@ export default function Footer() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex gap-[12px] font-inter text-[16px] font-normal"
+                  className="flex gap-[12px] font-inter text-[16px] font-normal hover:underline"
                 >
                   <img src={item.icon} alt={`${item.name} icon`} />
                   <span>{item.name}</span>
