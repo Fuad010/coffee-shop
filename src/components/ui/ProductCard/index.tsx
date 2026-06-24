@@ -1,5 +1,6 @@
 import Button from "../Button"
 import FeedbackStar from "../FeedbackStar"
+import FavoriteIcon from "@/assets/icons/favorite.svg"
 
 type Props = {
   title: string
@@ -10,12 +11,15 @@ type Props = {
 
 export default function ProductCard({ title, price, image, rating }: Props) {
   return (
-    <div className="rounded-[12px] border border-[#E0DFDE] max-w-[267px] overflow-hidden drop-shadow-[0px_0px_20px_#0000001F] bg-[#FAF5FF]">
+    <div className="rounded-[12px] border border-[#E0DFDE] max-w-[267px] overflow-hidden drop-shadow-[0px_0px_20px_#0000001F] bg-[#FAF5FF] relative">
       <img
         src={image}
         alt={title}
-        className="h-[240px] w-[267px] object-cover"
+        className="h-[240px] w-[267px] object-cover bg-bg"
       />
+      <button className="absolute right-[20px] top-[20px] ">
+        <img src={FavoriteIcon} alt="favorite" />
+      </button>
       <div className="px-[16px] pt-[20px] pb-[26px]">
         <div className="font-jakarta text-small-text font-bold flex justify-between items-center">
           <span className="text-[18px]">{title}</span>
