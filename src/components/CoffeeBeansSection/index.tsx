@@ -6,7 +6,7 @@ export default function CoffeeBeansSection() {
     <section>
       <div className="max-lg:px-[16px]">
         <div
-          className="w-full lg:h-[600px] h-max lg:mt-[110px] mt-[60px] flex max-sm:flex-col justify-center items-center bg-no-repeat max-sm:bg-position-[center_bottom] bg-position-[right_top] bg-[length:clamp(100px,100%,700px)] sm:bg-[length:clamp(300px,35%,700px)]"
+          className="w-full lg:h-[600px] lg:px-[16px] h-max lg:mt-[110px] mt-[60px] flex max-sm:flex-col justify-center items-center bg-no-repeat max-sm:bg-position-[center_bottom] bg-position-[right_top] bg-[length:clamp(100px,100%,700px)] sm:bg-[length:clamp(300px,35%,700px)]"
           style={{ backgroundImage: `url(${CoffeeBeansImg})` }}
         >
           <div className="max-w-[1140px] w-full">
