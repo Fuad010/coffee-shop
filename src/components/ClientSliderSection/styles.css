@@ -1,0 +1,31 @@
+.swiper-pagination {
+  bottom: 56px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background: white !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #c7a17a !important;
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-pagination {
+    bottom: 72px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-pagination {
+    bottom: 107px !important;
+  }
+  .swiper-pagination-bullet {
+    width: 16px !important;
+    height: 16px !important;
+  }
+}
