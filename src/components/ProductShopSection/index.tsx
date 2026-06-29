@@ -6,8 +6,8 @@ export default function ProductShopSection() {
   return (
     <section>
       <div className="lg:mt-[110px] sm:mt-[70px] mt-[50px] max-w-[1140px] mx-auto w-full">
-        <div className="text-center lg:max-w-[829px] max-w-[586px] w-full mx-auto">
-          <h2 className="font-jakarta font-semibold lg:text-[24px] sm:text-[16px] text-[20px] lg:mt-[32px] sm:mt-[16px] mt-[32px]">
+        <div className="text-center lg:max-w-[869px] max-w-[586px] w-full mx-auto flex flex-col items-center max-sm:px-[16px]">
+          <h2 className="font-jakarta lg:font-bold font-semibold text-text lg:text-[48px] sm:text-[24px] text-[20px] lg:mt-[32px] sm:mt-[16px] mt-[32px]">
             Our Special Coffee Beans Coffee kits
           </h2>
           <p className="font-inter max-w-[714px] w-full lg:mt-[28px] mt-[16px] lg:text-[16px] sm:text-[14px] text-[16px] lg:leading-[30px] sm:leading-[26px] leading-[30px] font-normal">
@@ -17,10 +17,11 @@ export default function ProductShopSection() {
             savor the difference!"
           </p>
         </div>
-        <div className="lg:mt-[80px] sm:mt-[50px] mt-[50px] flex lg:gap-[24px] sm:gap-[32px] gap-[24px] flex-wrap justify-center">
+        <div className="lg:mt-[80px] sm:mt-[50px] mt-[50px] flex lg:gap-[24px] sm:gap-[32px] gap-[24px] flex-wrap justify-center max-sm:px-[16px]">
           {products.map((product) => (
             <ProductCard
               key={product.id}
+              id={product.id}
               title={product.title}
               price={product.price}
               image={product.image}
