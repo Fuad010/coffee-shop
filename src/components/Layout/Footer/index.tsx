@@ -12,7 +12,10 @@ export default function Footer() {
             <Logo />
             <ul className="flex flex-col mt-[32px] gap-[20px] font-inter text-[16px] font-normal">
               {contactData.map((item) => (
-                <li key={item.text} className="flex items-center gap-[12px]">
+                <li
+                  key={item.text}
+                  className="flex items-center gap-[12px] cursor-pointer hover:underline"
+                >
                   <img src={item.icon} alt="contact icon" />
                   {item.text}
                 </li>
