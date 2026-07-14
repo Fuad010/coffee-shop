@@ -28,7 +28,7 @@ export default function NewsSection() {
           {news.map(({ image, title, date, comments }, index) => (
             <div
               key={index}
-              className="rounded-[16px] overflow-hidden lg:max-w-[364px] sm:max-w-full max-w-[318px] w-full drop-shadow-[0_3px_30px_#00000024]"
+              className="cursor-pointer hover:border-text border-white/0 border hover:scale-102 duration-450 transition-all ease-in-out rounded-[16px] overflow-hidden lg:max-w-[364px] sm:max-w-full max-w-[318px] w-full drop-shadow-[0_3px_30px_#00000024]"
             >
               <img
                 src={image}

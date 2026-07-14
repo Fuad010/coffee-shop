@@ -9,7 +9,7 @@ export default function GallerySection() {
         <h2 className="font-jakarta text-text lg:text-[48px] text-[24px] tracking-[-2%] font-bold text-center">
           Explore our coffee Gallery
         </h2>
-        <p className="font-inter text-text lg:max-w-[614px] max-w-[562px] lg:mt-[28px] sm:mt-[18px] mt-[12px] font-normal leading-[30px] text-center mx-auto">
+        <p className="font-inter text-text lg:max-w-[614px] max-w-[562px] lg:mt-[28px] sm:mt-[18px] mt-[12px] font-normal leading-[30px] text-center mx-auto px-[16px]">
           From bean to brew, discover the story behind our premium coffee.
           Browse our gallery and see how we bring the world’s best flavors to
           your cup
@@ -21,7 +21,7 @@ export default function GallerySection() {
               src={image}
               alt="gallery"
               className={clsx(
-                "rounded-[12px] aspect-square object-cover w-full h-full relative drop-shadow-[0px_0px_10px_#00000014]",
+                "rounded-[12px] aspect-square object-cover w-full h-full relative drop-shadow-[0px_0px_10px_#00000014] hover:scale-105 transition-all duration-450 ease-in-out",
                 {
                   "lg:top-[40px]": top === 40,
                   "lg:top-[80px]": top === 80,
